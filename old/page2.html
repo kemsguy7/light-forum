@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(229, 229, 229);
+      color: #333333;
+    }
+    
+    .header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .header .logo {
+      margin-right: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .header .logout {
+      margin-left: 10px;
+      color: #333333;
+      text-decoration: none;
+    }
+    
+    .header .logout:hover {
+      text-decoration: underline;
+    }
+    
+    .header a {
+      margin: 0 10px;
+      color: #333333;
+      text-decoration: none;
+    }
+    
+    .content {
+      background-color: #ffffff;
+      margin: 20px auto;
+      max-width: 70%;
+      padding: 20px;
+      border: 1px solid #dddddd;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .post-form {
+      margin-bottom: 20px;
+    }
+    
+    .comment {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #dddddd;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .reply {
+      margin-left: 20px;
+      padding: 10px;
+      border: 1px solid #dddddd;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .login-form {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #dddddd;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .login-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    
+    .footer {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#" class="logout">Logout</a>
+    <a href="#" class="logo">Logo</a>
+  </div>
+  
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>This is the body content of my website. It will be wrapped around a card-like layout.</p>
+    
+    <div class="post-form">
+      <h2>Post Form</h2>
+      <!-- Add your post form here -->
+    </div>
+    
+    <div class="comment">
+      <p>Comment 1</p>
+      
+      <div class="reply">
+        <p>Reply 1.1</p>
+      </div>
+      
+      <div class="reply">
+        <p>Reply 1.2</p>
+      </div>
+    </div>
+    
+    <div class="comment">
+      <p>Comment 2</p>
+    </div>
+    
+    <div class="comment">
+      <p>Comment 3</p>
+      
+      <div class="reply">
+        <p>Reply 3.1</p>
+        
+        <div class="reply">
+          <p>Reply 3.1.1</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="login-form">
+      <h2>Login Form</h2>
+      <form>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <input type="submit" value="Login">
+      </form>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>&copy; 2023 My Website. All rights reserved.</p>
+  </div>
+</body>
+</html>
